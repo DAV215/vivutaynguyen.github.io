@@ -18,7 +18,7 @@ html{
     background-color:#335;
     position: fixed;
     top:0px;
-    z-index: 2;
+    z-index: 3;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
 }
 #nav{
@@ -102,7 +102,7 @@ html{
     padding-top: 25%;
     background: 
     linear-gradient(0, rgba(207, 188, 197, 0.3), rgba(7, 1, 1, 0.938)),
-    url(/assets/img/congchieng.jpg) no-repeat center top/cover;
+    url(/assets/img/Congchieng.JPG) no-repeat center top/cover;
 }
 #slider .intro{
     position: absolute;
@@ -147,9 +147,11 @@ html{
 }
 #content .description_location {
     position: absolute;
-    top: 200px;
+    top: 230px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 2!important;
+
 }
 #content .location {
     font-size: 15px;
@@ -161,13 +163,13 @@ html{
     float: left;
 }
 #content .map{
-    position: absolute;
+    position: fixed;
+    display: flex;
     left:50%;
 }
 #content  .daklak_map{
-    position: fixed;
-    display: flex;
-    z-index: 3;
+    
+    z-index: 9!important;
     padding-top: 10px;
     width: 400px;
 }
@@ -175,10 +177,8 @@ html{
     width: 800px;
     left: 50%;
     transform: translateX(-50%);
-
     align-items: center;
     justify-content: center;
-
 }
 #content .tourist-area{
     position: absolute;
@@ -192,7 +192,7 @@ html{
   
 }
 .tourist-area.big{
-    height: 600px;
+    height: 630px;
 } 
 #content .tourist-area h2{
     font-size: 20px;
@@ -238,6 +238,9 @@ html{
     font-size: 13px;
     line-height: 1.7;
     font-weight: 650;
+    z-index: 0;
+    animation: modalFadeIn ease 1.2s;
+
 }
 #content .thacDrayNur{
     width: 250px;
