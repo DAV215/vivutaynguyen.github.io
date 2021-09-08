@@ -1,0 +1,507 @@
+/* RESET CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+#main{
+
+}
+
+#header{
+    height: 46px;
+    width: 100%;
+    background-color:#335;
+    position: fixed;
+    top:0px;
+    z-index: 2;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+}
+#nav{
+    display: inline-block;
+}
+#nav li{
+    display: inline-block;
+    position: relative;
+}
+#nav > li:hover> a{
+    color:rgba(0, 0, 0, 0.575);
+    background-color: rgba(81, 188, 192, 0.692);
+} 
+
+#nav>li>a{
+    color: #fff;
+    text-transform: uppercase ;
+}
+#nav li a {
+    display:block;
+    font-weight: bolder;
+    color: #fff;
+    text-decoration: none ;
+    line-height: 46px;
+    padding: 0  24px  0 24px;
+   
+}
+#nav .subnav{
+    position: absolute;
+    display: none;
+    background-color: #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);
+}
+#nav .subnav a{
+    color:rgb(236, 241, 241);
+    background-color: #333;
+    padding: 0 36px;
+    line-height: 44px;
+}
+#nav li:hover .subnav{
+    display:grid;
+}
+#nav .subnav li:hover a{
+    color:rgba(252, 243, 243, 0.877);
+    background-color: rgba(192, 16, 169, 0.2);
+    background-size: cover;
+}
+#nav  .subnav_contact{
+    position: absolute;
+    background-color: #333;
+    display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);
+}
+#nav .subnav_contact li{
+    display: block;
+}
+#nav .subnav_contact li:hover{
+    background-color: rgba(39, 8, 39, 0.74);
+}
+#nav li:hover .subnav_contact{
+    display: grid;
+}
+#header .btn_search{
+    float: right;
+    color: #fff;
+    line-height: 24px;
+    padding: 15px 25px 10px 10px;
+}
+#header  .search{
+    display: none;
+    position: relative;
+    bottom: 7px;
+    right:10px;
+}
+#header .btn_search:hover .search{
+    display: inline;
+}
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 25%;
+    background: 
+    linear-gradient(0, rgba(207, 188, 197, 0.3), rgba(7, 1, 1, 0.938)),
+    url(/assets/img/congchieng.jpg) no-repeat center top/cover;
+}
+#slider .intro{
+    position: absolute;
+    bottom: 70%;
+    left: 50%;
+    transform: translateX(-50%); 
+    text-align: center;
+    font-size: 20px;
+    color: rgba(224, 185, 54, 0.925);
+}
+#slider .location{
+    font-weight: 650;
+    padding-bottom: 10px;
+}
+#content{
+    position: relative;
+    /* min-height: 2000px; */
+}
+#content .content-section{
+    position: absolute;
+    width: 800px;
+    text-align:left;
+    left:50%;
+    transform: translateX(-50%);
+}
+#content .content-section h2{
+    text-align: center;
+    padding: 50px 0 20px 0;
+}
+#content .content-section h3{
+    font-size: 20px;
+    font-weight: 100;
+    padding: 10px 0;
+    font-style: oblique;
+    text-align: center;
+}
+#content .content-section p{
+    font-size: 15px;
+    font-weight: 550;
+    text-align: justify !important ;
+    line-height: 1.6;
+}
+#content .description_location {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#content .location {
+    font-size: 15px;
+    font-weight: 550;
+    text-align: justify;
+    line-height: 1.6;
+    width: 800px;
+    display: grid;
+    float: left;
+}
+#content .map{
+    position: absolute;
+    left:50%;
+}
+#content  .daklak_map{
+    position: fixed;
+    display: flex;
+    z-index: 3;
+    padding-top: 10px;
+    width: 400px;
+}
+#content  .daklak_map:hover{
+    width: 800px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    align-items: center;
+    justify-content: center;
+
+}
+#content .tourist-area{
+    position: absolute;
+    top: 520px;
+    text-align:center;
+    background-color: rgb(223, 108, 108);
+    margin-top: 100px;
+    min-height: 450px;
+    width: 100%;
+    z-index: 1;
+  
+}
+.tourist-area.big{
+    height: 600px;
+} 
+#content .tourist-area h2{
+    font-size: 20px;
+    padding: 60px 0 20px 0;
+}
+#content .des_tour{
+    position: absolute;
+    width: 800px;
+    text-align:left;
+    left:50%;
+    transform: translateX(-50%);
+}
+#content .tour-item{
+    /* transform: translateX(-20%); */
+    position: relative;
+    float: left;
+    text-align: center;
+    width: 33.3%;
+}
+#content .tour-item p{
+    padding-bottom: 10px;
+    font-weight: 600;
+    color: #333;
+}
+#content .meseum{
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    height: 254px;
+    width: 180px;
+}
+#content  .des_museum p{
+    display: none;
+    padding: 5px 5px;
+}
+#content  .des_museum:hover p{
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #fff;
+    width: 180px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    border-radius: 12px;
+    text-align: left;
+    font-size: 13px;
+    line-height: 1.7;
+    font-weight: 650;
+}
+#content .thacDrayNur{
+    width: 250px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    height: 254px;
+    width: 180px;
+}
+#content  .des_thac p{
+    display: none;
+    padding: 5px 5px;
+   
+}
+#content  .des_thac:hover p{
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #fff;
+    width: 180px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    border-radius: 12px;
+    text-align: left;
+    font-size: 13px;
+    line-height: 1.7;
+    font-weight: 650;
+}
+#content .buondon{
+    width: 230px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    height: 254px;
+    width: 180px;
+}
+#content  .des_buon p{
+    display: none;
+}
+#content  .des_buon:hover p{
+    
+    margin-top: 10px;
+    display: flex;
+    background-color: #fff;
+    width: 180px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    border-radius: 12px;
+    text-align: left;
+    font-size: 13px;
+    line-height: 1.7;
+    font-weight: 650;
+    padding: 5px 5px;
+}
+#content button{
+    background:  rgb(211, 77, 166);
+    padding: 5px 5px;
+    border-radius: 5px;
+    text-align: center;
+    color:rgb(236, 241, 241);
+    margin-left: 20%;
+    text-decoration: none
+}
+#content button:hover{
+    background:  rgb(58, 49, 55);
+}
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom:0;
+    background: rgba(12, 11, 11, 0.438);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: 1;
+}
+.modal.open{
+    display: flex;
+}
+.modal-container{
+    position: relative;
+    background:#fff;
+    width: 500px;
+    min-height: 300px;
+    max-width: calc(100%-32px);
+    border-radius: 20px;
+    animation: modalFadeIn ease 1s;
+}
+.modal-header{
+    background-color:#009688;
+    height: 130px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #fff;
+}
+.modal-heading-icon{
+    margin-right: 12px;
+}
+.modal-close-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 12px;
+    opacity: 0.7;
+}
+.modal-close-btn:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+.modal-body{
+    padding: 10px;
+    display: grid;
+}
+.modal-label{
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.modal-input{
+    padding: 5px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    border-radius: 8px;
+    border-color: #7a3569;
+    border-width: 2px;
+    outline: none;
+}
+.modal-input:active{
+    border-width: 0;
+    border-style: solid;
+}
+#buy-tickets:hover{
+    opacity: 0.85;
+}
+#buy-tickets{
+    background-color:#009688;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.modal-footer{
+    text-align: right;
+    padding: 2px;
+    padding-right: 18px;
+    opacity: 0.8;
+    font-weight: 600;
+}
+.modal-footer a{
+    color:rgba(81, 188, 192, 0.692);
+}
+@keyframes modalFadeIn{
+    from{
+        transform: translateY(-456px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+/*common(dungchung)*/
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-2{
+    width: 50%;
+
+}
+.col-full{
+    width: 100%;
+}
+/*common(dungchung)*/
+
+#contact{
+    position: relative;
+    top: 1050px;
+    text-align:center;
+    background-color: rgb(42, 82, 114);
+    min-height: 230px;
+    width: 100%;
+}
+#content .contact-container{
+    position: absolute;
+    width: 800px;
+    left:50%;
+    transform: translateX(-50%);
+}
+#content .contact-container h2{
+    font-size: 20px;
+    padding: 30px 0 20px 0;
+}
+#content .contact-container p{
+    padding: 5px 0px;
+    display: grid;
+    color: #fff;
+    margin-left: 30px;
+    display:block;
+    font-size: 15px;
+    text-align:justify;
+}
+#content .contact-container a{
+    color: #fff;
+}
+#content .contact-content{
+    padding: 10px;
+}
+#content .contact-form{
+    padding: 10px;
+}
+#content .form-control{
+    padding: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    outline: none;
+}
+
+.contact-form .form-submit-btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    float: right;
+    opacity: 1;
+}
+.contact-form .form-submit-btn:hover{
+    opacity: 0.8;
+
+}
+#footer{
+    position: relative;
+    padding: 64px 16px;
+    text-align: center;
+    line-height:1.4;
+    color:rgb(236, 241, 241);
+    top: 1020px;
+    bottom:0px;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(0, rgb(7 1 1 / 94%), rgb(42 82 114));
+    
+}
+#footer .footer-container a{
+    color:rgba(230, 210, 210, 0.815);
+    font-size: 25px;
+    font-style: normal;
+    text-decoration: none;
+    padding: 0 5px;
+}
+#footer .footer-container p{
+    color: #fff;
+    font-size: 10px;
+    font-style: normal;
+}
+
